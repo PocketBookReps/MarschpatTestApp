@@ -1,1 +1,138 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marschpat app</title>
+    <h1>Test application for Marschpat</h1>
+
+    <style>
+        img {
+            /* 1448 1072 */
+            width: 402px;
+            height: 543px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>
+        Launch app. <br />
+        You can choose one of two modes - client (main device) or service.
+    </h3>
+    <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/1" /></div>
+
+    <table style="padding: 0px;">
+        <tr>
+            <td valign="top">
+                <h2>
+                    App description for client mode
+                </h2>
+                <h3>
+                    If you select client mode, you will see next screen:
+                </h3>
+                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/2" /></div>
+
+                <h3>
+                    Here you can connect to device (if you know bluetooth mac-address). <br />
+                    Push at "Connect to device via mac" button.
+                    Dialog will appear.
+                </h3>
+                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/3" /></div>
+
+                <h3>
+                    Just input bt mac address and push "OK" button. <br />
+                    Then device will connect to service. <br />
+                    Push button "See device List / connect to device" <br />
+                    You will see list of devices. (For now it will be device to which we connected)
+                </h3>
+                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/4" /></div>
+
+                <h3>
+                    Push button "Device details"
+                </h3>
+                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/5" /></div>
+
+                <h3>
+                    Here you can see some information about connected device. <br />
+                    For now in device name we use it's MAC address. <br />
+                    Device connection status - (Connected means client device is connected to service) <br />
+                    In message to device field you can enter message to send it to service device. (20 symbols max)
+                    <br />
+                    You can push "check" button, or simply push "enter" at keyboard. <br />
+                    Message from service: you can get a message from service device. <br />
+                    Push button "Get message from service" and you will see it. <br />
+                    By default value is "hello". <br />
+                    By pushing refresh button you will refresh next fields: "Device connection state", "Message from
+                    device"
+                </h3>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="column" style="width:402px;height:543px;border:1px solid #000;"><img
+                                    src="imgs/6" /></div>
+                        </td>
+                        <td>
+                            <div class="column" style="width:402px;height:543px;border:1px solid #000;"><img
+                                    src="imgs/7" /></div>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+            <td valign="top">
+                <h2>
+                    App description for service mode
+                </h2>
+                <h3>
+                    If you select service mode, you will see next screen:
+                </h3>
+                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/8" /></div>
+
+                <h3>
+                    Here you can start/stop service. <br />
+                    Push at "Start service"/"Stop service" button. <br />
+                    You have to start service, if you to connect to this device.
+                </h3>
+                <table>
+                    <tr>
+                        <td>
+                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/9" /></div>
+                        </td>
+                        <td>
+                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/10" /></div>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>
+                    Push at "See device info" button to see information about device. <br />
+                    Here you can see some information about connected device. <br />
+                    For now in device name we use "Test1". You can simply change it. <br />
+                    Device connection status - (connected/disconnected)<br />
+                    In message to client field you can enter message to write it on service device. (20 symbols max)
+                    Client can read this message <br />
+                    You can push "check" button, or simply push "enter" at keyboard. <br />
+                    Message from client: you can get a message from client device. <br />
+                    Push button "Get message from client" and you will see it. <br />
+                    By pushing refresh button you will refresh next fields: "Device connection state", "Message from
+                    client"
+                </h3>
+                <table>
+                    <tr>
+                        <td>
+                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/11" /></div>
+                        </td>
+                        <td>
+                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/12" /></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
