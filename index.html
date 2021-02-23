@@ -12,6 +12,25 @@
             height: 543px;
         }
 
+        .img_rect {
+            width:402px;
+            height:543px;
+            border:1px solid #000;
+        }
+
+        .small_spacer {
+            width: 25px;
+            height: 100%;
+        }
+
+        .big_spacer {
+            width: 75px;
+            height: 100%;
+        }
+
+        h3 {
+            width: 402px;
+        }
     </style>
 </head>
 
@@ -20,7 +39,7 @@
         Launch app. <br />
         You can choose one of two modes - client (main device) or service.
     </h3>
-    <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/1" /></div>
+    <div class="img_rect"><img src="imgs/1" /></div>
 
     <table style="padding: 0px;">
         <tr>
@@ -31,29 +50,64 @@
                 <h3>
                     If you select client mode, you will see next screen:
                 </h3>
-                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/2" /></div>
+                <div class="img_rect"><img src="imgs/2" /></div>
 
                 <h3>
                     Here you can connect to device (if you know bluetooth mac-address). <br />
                     Push at "Connect to device via mac" button.
                     Dialog will appear.
                 </h3>
-                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/3" /></div>
+                <div class="img_rect"><img src="imgs/3" /></div>
+
+                <table style="padding: 0px;">
+                    <tr>
+                        <td valign="top">
+                            <h3>
+                                Just input bt mac address and push "OK" button. <br />
+                                Then device will connect to service. <br />
+                                Push button "See device List / connect to device" <br />
+                                You will see list of devices.
+                            </h3>
+                            <div class="img_rect"><img src="imgs/4" /></div>
+                        </td>
+                        <td>
+                            <div class="small_spacer"></div>
+                        </td>
+                        <td valign="top">
+                            <h3>
+                                Now you can scan for devices.<br />
+                                You need to push "Rescan devices list" button. <br /><br /><br />
+                            </h3>
+                            <div class="img_rect"><img src="imgs/13" /></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <h3 style="width: 402px;">
+                                An hourglass will be displayed While the client is scans for devices. <br/>
+                                You can push "Stop scanning devices" button to stop scanning process.
+                            </h3>
+                            <div class="img_rect"><img src="imgs/14" /></div>
+                        </td>
+                        <td>
+                            <div class="small_spacer"></div>
+                        </td>
+                        <td valign="top">
+                            <h3>
+                                Device list will be sorted after scan. <br/>
+                                You can connect to them and see device info. <br/><br/><br/>
+                            </h3>
+                            <div class="img_rect"><img src="imgs/15" /></div>
+                        </td>
+                    </tr>
+                </table>
 
                 <h3>
-                    Just input bt mac address and push "OK" button. <br />
-                    Then device will connect to service. <br />
-                    Push button "See device List / connect to device" <br />
-                    You will see list of devices. (For now it will be device to which we connected)
+                    Push button "Device details" and you will see this screen.
                 </h3>
-                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/4" /></div>
+                <div class="img_rect"><img src="imgs/5" /></div>
 
-                <h3>
-                    Push button "Device details"
-                </h3>
-                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/5" /></div>
-
-                <h3>
+                <h3 style="width: 829px;">
                     Here you can see some information about connected device. <br />
                     For now in device name we use it's MAC address. <br />
                     Device connection status - (Connected means client device is connected to service) <br />
@@ -69,15 +123,22 @@
                 <table>
                     <tr>
                         <td>
-                            <div class="column" style="width:402px;height:543px;border:1px solid #000;"><img
+                            <div class="img_rect"><img
                                     src="imgs/6" /></div>
                         </td>
                         <td>
-                            <div class="column" style="width:402px;height:543px;border:1px solid #000;"><img
+                            <div class="small_spacer"></div>
+                        </td>
+                        <td>
+                            <div class="img_rect"><img
                                     src="imgs/7" /></div>
                         </td>
                     </tr>
                 </table>
+
+            </td>
+            <td valign="top">
+                <div class="big_spacer"></div>
 
             </td>
             <td valign="top">
@@ -87,25 +148,28 @@
                 <h3>
                     If you select service mode, you will see next screen:
                 </h3>
-                <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/8" /></div>
+                <div class="img_rect"><img src="imgs/8" /></div>
 
                 <h3>
                     Here you can start/stop service. <br />
                     Push at "Start service"/"Stop service" button. <br />
-                    You have to start service, if you to connect to this device.
+                    You have to start service, if you want to connect to this device.
                 </h3>
                 <table>
                     <tr>
                         <td>
-                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/9" /></div>
+                            <div class="img_rect"><img src="imgs/9" /></div>
                         </td>
                         <td>
-                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/10" /></div>
+                            <div class="small_spacer"></div>
+                        </td>
+                        <td>
+                            <div class="img_rect"><img src="imgs/10" /></div>
                         </td>
                     </tr>
                 </table>
 
-                <h3>
+                <h3 style="width: 829px;">
                     Push at "See device info" button to see information about device. <br />
                     Here you can see some information about connected device. <br />
                     For now in device name we use "Test1". You can simply change it. <br />
@@ -121,10 +185,13 @@
                 <table>
                     <tr>
                         <td>
-                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/11" /></div>
+                            <div class="img_rect"><img src="imgs/11" /></div>
                         </td>
                         <td>
-                            <div style="width:402px;height:543px;border:1px solid #000;"><img src="imgs/12" /></div>
+                            <div class="small_spacer"></div>
+                        </td>
+                        <td>
+                            <div class="img_rect"><img src="imgs/12" /></div>
                         </td>
                     </tr>
                 </table>
